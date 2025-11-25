@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modèle de Page Secondaire</title>
+    
+    <style>
+        /* * STYLE GÉNÉRAL ET CONTENEUR 
+         */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .modele-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 0;
+            overflow: hidden; /* Important pour contenir le menu flottant */
+        }
+
+        /* * 1. Entête et Contenu 
+         */
+        .entete {
+            background-color: #3f70b5; /* Bleu du bandeau */
+            color: white;
+            text-align: center;
+            padding: 10px 10px 15px 10px; /* Plus d'espace en bas */
+        }
+        
+        .entete h3 {
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: normal; /* GROUPE N°... */
+        }
+
+        .entete h2 {
+            margin: 5px 0 0;
+            font-size: 1.6em;
+            font-weight: bold; /* Nom du Membre */
+        }
+
+        .contenu-wrapper {
+            /* Conteneur principal qui contient le menu flottant et la zone de contenu */
+            overflow: hidden; 
+            min-height: 300px;
+            position: relative; /* Nécessaire pour positionner le bouton de retour absolument */
+        }
+        
+        /* * 2. Navigation (Menu Gauche) 
+         */
+        .navigation {
+            float: left;
+            width: 150px;
+            background-color: #f0f0f0; /* Gris clair derrière le bouton */
+            padding: 15px 5px;
+            min-height: 270px; /* Assure que la zone est visible */
+        }
+
+        .menu-bouton {
+            display: block;
+            background-color: #999999; /* Gris foncé du bouton */
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            margin: 5px; /* Un peu d'espace autour du bouton */
+            border: 1px solid #777;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* * 3. Zone de Contenu Droit 
+         */
+        .contenu-principal {
+            margin-left: 170px; /* Laisse de l'espace pour le menu de 150px + padding/marge */
+            padding: 15px;
+            min-height: 270px;
+        }
+
+        /* * 4. Bouton de Retour 
+         */
+        .retour-bouton {
+            display: inline-block;
+            background-color: #999999; 
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border: 1px solid #777;
+            text-decoration: none;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+            /* Positionnement dans le coin inférieur droit du contenu-wrapper */
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="modele-container">
+        <div class="entete">
+            <h3>GROUPE N°1</h3>
+            <h2>Kouadje Derrick Cadol</h2>
+        </div>
+        
+        <div class="contenu-wrapper">
+            
+            <div class="navigation">
+                <a href="#" class="menu-bouton">Menu 1</a>
+            </div>
+            
+            <div class="contenu-principal">
+                </div>
+            
+            <a href="index.html" class="retour-bouton">Retour page principale</a>
+        </div>
+        
+        </div>
+
+</body>
+</html>
